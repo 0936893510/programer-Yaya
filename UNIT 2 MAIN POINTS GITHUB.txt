@@ -1,0 +1,242 @@
+﻿UNIT 2 MAIN POINTS 
+
+
+Introduction to c++ programming 
+
+C++ program  contains  a basic building block named a statement .
+A statement  could be an instructions  or combination of instructions .
+Statement end by( semicolon) e.g int   x;
+C++ is case sensetive     this maens A  and a are different 
+The compiler  ignores  all space and new line .
+
+
+
+
+Keywords: These are reserved words in C++ that have special meaning and cannot be used as identifiers or variable names. Examples include int, if, else, while, etc.
+
+
+
+
+Identifiers: These are names given to entities such as variables, functions, and classes in C++. Identifiers must follow certain rules, such as starting with a letter or underscore and not being a reserved keyword.
+
+
+
+
+
+Comments: These are text that are added to code to explain what the code does or to make notes. Comments are ignored by the compiler and can be either single-line (using //) or multi-line (using /* ... */).
+
+
+
+
+
+Variables: These are entities that store values in C++. Variables have a name, a data type, and a value. They can be declared using the syntax <data type> <variable name> = <initial value>;.
+
+
+
+
+
+Data type: This is a classification of types of data that determine the operations that can be performed on the data. Examples include int, double, char, bool, etc.
+
+
+
+
+Characters: These are single letters, digits or symbols in C++. They are represented using single quotes (' ') and have a corresponding ASCII value.
+
+
+
+
+Constants: These are values that do not change during the execution of a program. They can be declared using the const keyword.
+
+
+
+Input output statement: These are statements used for inputting and outputting data to and from the program. Examples include cin and cout.
+
+
+
+
+Operators: These are symbols that perform operations on operands. Examples include +, -, *, /, %, etc.
+
+
+
+Implicit and explicit type conversion: Implicit type conversion happens automatically by the compiler when there is a need to convert one data type to another. Explicit type conversion involves casting a data type to another using a specific syntax.
+
+
+
+
+Increment and decrement: These are operators used to increase or decrease the value of a variable by 1. The increment operator is denoted by ++ and the decrement operator is denoted by 
+
+
+
+
+Keywords: These are reserved words in C++ that have special meaning and cannot be used as identifiers or variable names. Examples include int, if, else, while, etc.
+
+Some reserved words in C++ are:
+- auto
+- bool
+- break
+- case
+- catch
+- char
+- class
+- const
+- constexpr
+- continue
+- default
+- delete
+- do
+- double
+- else
+- enum
+- explicit
+- extern
+- false
+- float
+- for
+- friend
+- goto
+- if
+- inline
+- int
+- long
+- mutable
+- namespace
+- new
+- noexcept
+- nullptr
+- operator
+- private
+- protected
+- public
+- register
+- reinterpret_cast
+- return
+- short
+- signed
+- sizeof
+- static
+- static_assert
+- static_cast
+- struct
+- switch
+- template
+- this
+- throw
+- true
+- try
+- typedef
+- typeid
+- typename
+- union
+- unsigned
+- using
+- virtual
+- void
+- volatile
+- wchar_t
+- while
+
+
+
+Identifiers: These are names given to entities such as variables, functions, and classes in C++. Identifiers must follow certain rules, such as starting with a letter or underscore and not being a reserved keyword.
+
+
+
+Comments: These are text that are added to code to explain what the code does or to make notes. Comments are ignored by the compiler and can be either single-line (using //) or multi-line (using /* ... */).
+
+There are two types of C++ comments: 
+
+1. Single-line comments: These comments start with // and continue until the end of the line. They are used to add notes or explanations to code.
+
+Example: 
+
+// This is a single-line comment
+
+2. Multi-line comments: These comments start with /* and end with */. They can span multiple lines and are used for longer explanations or to temporarily disable code.
+
+Example: 
+
+/* This is a multi-line comment
+   that spans multiple lines */
+
+
+
+
+
+Variables: These are entities that store values in C++. Variables have a name, a data type, and a value. They can be declared using the syntax <data type> <variable name> = <initial value>;.
+
+
+To create more than one variable at a time in C++, you can use the following syntax:
+
+data_type variable1, variable2, variable3;
+
+For example, to create three integer variables named num1, num2, and num3, you can write:
+
+int num1, num2, num3;
+
+You can also initialize these variables at the same time by assigning values to them using the following syntax:
+
+data_type variable1 = value1, variable2 = value2, variable3 = value3;
+
+For example, to create and initialize three integer variables named x, y, and z with the values 10, 20, and 30 respectively, you can write:
+
+int x = 10, y = 20, z = 30;
+
+Data type: This is a classification of types of data that determine the operations that can be performed on the data. Examples include int, double, char, bool, etc.
+
+C++ Data Types and their Ranges:
+
+1. bool: Represents a boolean value, either true or false.
+   Range: true or false
+
+2. char: Represents a single character value.
+   Range: -128 to 127 or 0 to 255
+
+3. int: Represents integer values.
+   Range: -2147483648 to 2147483647
+
+4. float: Represents floating-point values with single precision.
+   Range: 1.17549e-38 to 3.40282e+38
+
+5. double: Represents floating-point values with double precision.
+   Range: 2.22507e-308 to 1.79769e+308
+
+6. short: Represents short integer values.
+   Range: -32768 to 32767
+
+7. long: Represents long integer values.
+   Range: -9223372036854775808 to 9223372036854775807
+
+8. unsigned int: Represents unsigned integer values.
+   Range: 0 to 4294967295
+
+9. unsigned char: Represents unsigned character values.
+   Range: 0 to 255
+
+10. long long: Represents long long integer values.
+    Range: -9223372036854775808 to 9223372036854775807
+
+Characters: These are single letters, digits or symbols in C++. They are represented using single quotes (' ') and have a corresponding ASCII value.
+
+
+
+Constants: These are values that do not change during the execution of a program. They can be declared using the const keyword.
+
+
+
+
+Input output statement: These are statements used for inputting and outputting data to and from the program. Examples include cin and cout.
+
+
+
+Operators: These are symbols that perform operations on operands. Examples include +, -, *, /, %, etc.
+
+
+
+Implicit and explicit type conversion: Implicit type conversion happens automatically by the compiler when there is a need to convert one data type to another. Explicit type conversion involves casting a data type to another using a specific syntax.
+
+
+
+Increment and decrement: These are operators used to increase or decrease the value of a variable by 1. The increment operator is denoted by ++ and the decrement operator is denoted by --.
+
+
+
