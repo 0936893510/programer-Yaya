@@ -1,0 +1,140 @@
+﻿UNIT 3 CONTROL STATEMENT 
+ Control flow statement
+ It can cause a change in subsequent control of flow to differ the natural sequential order in which the instructions are listed.
+There are 3 types of control flow
+Conditional or selection statement 
+Iteration or looping statement 
+Jumping statement 
+
+
+
+Sequence: In C++, a sequence is a series of statements that are executed in order, one after the other. This means that the output of one statement becomes the input of the next.
+
+
+Selection: Selection statements in C++ allow the program to choose which statement to execute based on the value of a particular condition. The most common selection statement is the if-else statement.
+
+.
+Conditional statements: Conditional statements in C++ are statements that allow the program to execute certain statements based on a particular condition. Examples include if-else statements, switch statements, and ternary operators.
+
+- if statement: A conditional statement in C++ that executes a block of code if a particular condition is true. If the condition is false, the block of code is skipped.
+
+- if-else statement: A conditional statement in C++ that executes one block of code if a particular condition is true, and another block of code if the condition is false.
+
+- nested if: A series of if statements within another if statement, allowing for more complex conditional logic.
+
+- multi-way if-else: An if-else statement that allows for multiple possible outcomes based on different conditions.
+
+- switch: A selection statement in C++ that allows the program to choose which statement to execute based on the value of a particular variable. It provides an alternative to using multiple if-else statements.
+
+- continue: A keyword in C++ used within a loop that skips the current iteration and moves on to the next iteration.
+
+- break: A keyword in C++ used within a loop or switch statement that immediately exits the loop or switch and continues executing the next line of code outside of the loop or switch
+
+Loops: Loops in C++ allow the program to execute a block of code repeatedly until a certain condition is met. There are three types of loops in C++: for loop, while loop, and do-while loop.
+
+For loop example:
+
+for(int i=0; i<10; i++){
+   cout << i << endl;
+}
+
+This will output the numbers 0 through 9.
+
+While loop example:
+
+int i = 0;
+while(i < 10){
+   cout << i << endl;
+   i++;
+}
+
+This will output the numbers 0 through 9.
+
+Do-while loop example:
+
+int i = 0;
+do{
+   cout << i << endl;
+   i++;
+}while(i < 10);
+
+This will output the numbers 0 through 9.
+
+Conditional statements: Conditional statements in C++ are statements that allow the program to execute certain statements based on a particular condition. Examples include if-else statements, switch statements, and ternary operators.
+
+int num = 5;
+if(num > 0){
+   cout << "Positive" << endl;
+}
+
+This will output "Positive".
+
+If-else statement example:
+
+int num = -5;
+if(num > 0){
+   cout << "Positive" << endl;
+}else{
+   cout << "Negative" << endl;
+}
+
+This will output "Negative".
+
+Nested if statement example:
+
+int num = 5;
+if(num > 0){
+   if(num % 2 == 0){
+      cout << "Positive and even" << endl;
+   }else{
+      cout << "Positive and odd" << endl;
+   }
+}
+
+This will output "Positive and odd".
+
+Multi-way if-else statement example:
+
+int num = 5;
+if(num > 0 && num < 10){
+   cout << "Single digit positive number" << endl;
+}else if(num >= 10 && num < 100){
+   cout << "Double digit positive number" << endl;
+}else{
+   cout << "Number is not within range" << endl;
+}
+
+This will output "Single digit positive number"
+
+
+switch: A selection statement in C++ that allows the program to choose which statement to execute based on the value of a particular variable. It provides an alternative to using multiple if-else statements.
+
+Switch statement example:
+
+int num = 2;
+switch(num){
+   case 1:
+      cout << "One" << endl;
+      break;
+   case 2:
+
+
+      cout << "Two" << endl;
+      break;
+   case 3:
+      cout << "Three" << endl;
+      break;
+   default:
+      cout << "Number is not between 1 and 3" << endl;
+}
+
+This will output "Two".
+
+
+
+
+
+
+
+
+
