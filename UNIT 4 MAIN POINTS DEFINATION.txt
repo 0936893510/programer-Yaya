@@ -1,0 +1,151 @@
+﻿UNIT 4 MAIN POINT DEFINITION
+
+Introduction to arrays
+
+Arrays are used to process a collection of  data of the same type.
+
+Examples 
+
+A list of names 
+
+A list of temperature 
+
+The elements of array are related by the fact  that they have the same array of name and type.
+
+The number used to referred   to a particular elements of an array is called its index.
+
+There are two types of array
+
+One dimensional array 
+
+Two dimensional array
+
+A typical declaration for an array in c++ syntax is :
+
+Type array name [size]
+
+Example 
+
+Int numbers [9];
+
+Int numbers [1];
+
+Int numbers [5];
+
+The array size is used to declare an array must be constant expression in standard c++.
+
+For example :
+
+int size =4;
+
+double my list( size );
+
+
+1. Definition of Array in C++: An array in C++ is a collection of similar data types that are stored in contiguous memory locations. It is a data structure that allows the storage and manipulation of multiple values under a single variable name.
+
+2. Types of Array and Their Definitions: There are two types of arrays in C++:
+
+a. One-Dimensional Array: A one-dimensional array is a collection of elements of the same data type that are arranged in a single row or column. It is also known as a linear array.
+
+b. Two-Dimensional Array: A two-dimensional array is a collection of elements of the same data type that are arranged in rows and columns. It is also known as a matrix.
+
+3. Initialization of One-Dimensional Array with Definition: The initialization of a one-dimensional array involves assigning initial values to its elements at the time of declaration. The syntax for initializing a one-dimensional array with definition is:
+
+data_type array_name[size] = {value1, value2, ..., valueN};
+
+For example, to initialize an integer array named num with three elements 10, 20, and 30, the syntax would be:
+
+int num[3] = {10, 20, 30};
+
+4. Accessing One-Dimensional Array Elements with Examples: The elements of a one-dimensional array can be accessed using their index values. The index value starts from 0 and ends at size-1. The syntax for accessing the elements of a one-dimensional array is:
+
+array_name[index]
+
+For example, to access the second element (20) of the integer array named num, the syntax would be:
+
+num[1]
+
+5. Initialization of Two-Dimensional Array Definition: The initialization of a two-dimensional array involves assigning initial values to its elements at the time of declaration. The syntax for initializing a two-dimensional array with definition is:
+
+data_type array_name[row_size][col_size] = {{value1, value2, ..., valueN}, {value1, value2, ..., valueN}, ..., {value1, value2, ..., valueN}};
+
+For example, to initialize a two-dimensional integer array named matrix with two rows and three columns, the syntax would be:
+
+int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};
+
+6. Accessing Two-Dimensional Array: The elements of a two-dimensional array can be accessed using their row and column index values. The syntax for accessing the elements of a two-dimensional array is:
+
+array_name[row_index][col_index]
+
+For example, to access the element in the second row and third column (6) of the integer array named matrix, the syntax would be:
+
+matrix[1][2]
+
+
+7. Definition of String in C++: A string in C++ is a sequence of characters that is stored in contiguous memory locations. It is a data type that allows the storage and manipulation of text or character data under a single variable name.
+
+8. String Character Definition and Examples: A string character is a single element of a string that represents a single character. It can be any character, including letters, digits, symbols, and whitespace. For example, the string "Hello World!" contains 12 characters, including spaces and the exclamation mark.
+
+9. String Constants Definition and Examples: A string constant is a sequence of characters enclosed in double quotes that represent a fixed value. It is also known as a string literal. For example, the string constant "C++ Programming" represents the fixed value of the text "C++ Programming".
+
+10. C++ Library Functions for String with Definition and Example:
+
+a. strlen(): The strlen() function returns the length of a string in terms of the number of characters. The syntax for using the strlen() function is:
+
+int strlen(const char *str);
+
+Example:
+
+char str[] = "Hello World!";
+
+int length = strlen(str);
+
+// length will be 12
+
+b. strcpy(): The strcpy() function copies one string to another string. The syntax for using the strcpy() function is:
+
+char *strcpy(char *dest, const char *src);
+
+Example:
+
+char src[] = "C++ Programming";
+
+char dest[20];
+
+strcpy(dest, src);
+
+// dest will contain "C++ Programming"
+
+c. strcat(): The strcat() function concatenates two strings by appending the second string to the end of the first string. The syntax for using the strcat() function is:
+
+char *strcat(char *dest, const char *src);
+
+Example:
+
+char str1[] = "Hello";
+
+char str2[] = "World!";
+
+strcat(str1, str2);
+
+// str1 will contain "HelloWorld!"
+
+d. strstr(): The strstr() function searches for a substring in a string and returns a pointer to the first occurrence of the substring. The syntax for using the strstr() function is:
+
+char *strstr(const char *str1, const char *str2);
+
+Example:
+
+char str[] = "C++ Programming";
+
+char sub[] = "Programming";
+
+char *ptr = strstr(str, sub);
+
+// ptr will point to "Programming" in str
+
+
+
+
+
+
