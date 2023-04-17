@@ -1,0 +1,128 @@
+﻿UNIT TWO EXERCISES
+State that a program calculates the product of three numbers
+Declare variables a, b, c, and product as integers.
+5. Use the input function to read three integers from the keyboard and store them in variables a, b, and c.
+6. Multiply the values of a, b, and c together and store the result in the variable product.
+7. Print the value of the variable product as the output of the program.
+Write a statement for declare a variables x ,y ,z and result to be of type Int
+x: int
+y: int
+z: int
+result: int
+Write a program that accept two integers and display their , sum,diffrence,product and division of two intigers?
+#include <iostream>
+using namespace std;
+int main<>{
+}
+Int a,b,sum,diff,pro,div;
+# Addition
+sum = a + b
+print("Sum:", sum)
+
+# Subtraction
+diff = a - b
+print("Difference:", diff)
+
+# Multiplication
+product = a * b
+print("Product:", product)
+
+# Division
+if b == 0:
+    print("Cannot divide by zero")
+else:
+    division = a / b
+    print("Division:", division
+1. Arithmetic Operators:
+Arithmetic operators are used to perform mathematical operations. The following are some examples:
+
+
+a /= b; // a = 10
+
+. Bitwise Operators:
+Bitwise operators are used to perform operations on individual bits of a number. The following are some examples:
+nt a = 10, b = 5;
+int result1 = (a & b); // 0
+int result2 = (a | b); // 15
+int result3 = (a ^ b); // 15
+int result4 = (~a); // -11
+int result5 = (a << 2); // 40
+int result6 = (a >> 2); // 
+
+
+
+Write a program that to solve a quadratic equation hint:y=a(x*x)+bx+c
+root=-b-+(b*b-4ac/2a
+a = float(input("Enter the value of a: "))
+b = float(input("Enter the value of b: "))
+c = float(input("Enter the value of c: "))
+
+# calculate the discriminant
+discriminant = b**2 - 4*a*c
+
+# check if the discriminant is positive, negative or zero
+if discriminant > 0:
+    # calculate the two roots
+    root1 = (-b + (discriminant)**0.5) / (2*a)
+    root2 = (-b - (discriminant)**0.5) / (2*a)
+    print("The roots are", root1, "and", root2)
+elif discriminant == 0:
+    # calculate the single root
+    root = -b / (2*a)
+    print("The root is", root)
+else:
+    # display imaginary roots
+    real_part = -b / (2*a)
+    imaginary_part = (-discriminant)**0.5 / (2*a)
+    print("The roots are", real_part, "+", imaginary_part, "i and", real_part, "-", imaginary_part, "i")
+
+
+
+
+Examples on character type, constants, input output statement ,increment ,decrement  in c++
+
+
+
+
+
+
+
+
+Character type example:
+
+char letter = 'A';
+cout << letter << endl;
+
+This will output "A".
+
+Constants example:
+
+const int PI = 3.14159;
+cout << "The value of PI is: " << PI << endl;
+
+This will output "The value of PI is: 3.14159".
+
+Input/output statement example:
+
+int age;
+cout << "Enter your age: ";
+cin >> age;
+cout << "Your age is: " << age << endl;
+
+This will prompt the user to enter their age and then output it.
+
+Increment example:
+
+int num = 5;
+num++;
+cout << num << endl;
+
+This will output "6".
+
+Decrement example:
+
+int num = 5;
+num--;
+cout << num << endl;
+
+This will output "4".
