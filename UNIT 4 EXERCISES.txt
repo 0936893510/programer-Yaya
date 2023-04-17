@@ -1,0 +1,417 @@
+﻿UNIT 4 EXERCISES ARRAY&STRING
+
+
+Examples on declaration of arrays 
+
+
+
+int arr[5]; // declares an integer array of size 5
+int arr[8]; // declares an integer array of size 8
+int arr[1]; // declares an integer array of size 1
+int arr[3]; // declares an integer array of size 3
+int arr[4]; // declares an integer array of size 4
+
+Examples on initialization of array
+
+
+
+1. int arr[5] = {1, 2, 3, 4, 5}; // initializes the array with values 1, 2, 3, 4, 5
+2. int arr[] = {10, 20, 30}; // initializes the array with values 10, 20, 30 and the size is automatically determined by the number of values in the braces
+3. int arr[5] = {0}; // initializes the array with all elements set to 0
+4. char vowels[] = {'a', 'e', 'i', 'o', 'u'}; // initializes a character array with vowels
+5. bool flags[3] = {true, false, true}; // initializes a boolean array with values true, false, true.
+
+
+int numbers [5]= { 2 ,3 ,6 ,8 ,4 }
+
+int number [0]= 2;
+
+int number [1]= 3;
+
+int number [2]= 6;
+
+int number [3]= 8;
+
+int number [4]= 4;
+
+
+
+Write a program  if an array has five elements . What is the highest index of a valid element in the array ?
+
+
+The highest index of a valid element in an array with five elements is 4, since arrays are zero-indexed and the last element would have an index of size-1.
+
+
+
+Write the code required to declare an array of 10 integers is called intArray. then initialized the array so that each element  contians  the value of its index . Use a for loop in c++
+#include <iostream>
+using namespace std;
+int main<>{
+
+
+int intArray[10]; 
+
+for(int i = 0; i < 10; i++)
+{
+    intArray[i] = i; 
+
+}
+return =0;
+
+Write a c++ program that find the sum of the following numbers by using array and there by calculate their average  . It should display the sum and average on two lines . { 4,3 ,5,2,1}
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+   int numArray[] = {4, 3, 5, 2, 1};
+   int sum = 0;
+   
+   // Calculate the sum
+   for(int i = 0; i < 5; i++) {
+      sum += numArray[i];
+   }
+   
+   // Calculate the average
+   double average = (double)sum / 5;
+   
+   // Display the sum and average
+   cout << "Sum: " << sum << endl;
+   cout << "Average: " << average << endl;
+   
+   return 0;
+}
+
+
+Write a c++ program that accept three numbers by using one dimensional array and then display  the accepted numbers to the screen .
+
+#include <iostream>
+using namespace std;
+const int n=3;
+int main<>{
+int [n];
+
+cout<<"enter elements of the array\n;
+
+for(int i=0; i<n; i++) {
+
+cout<<"enter a{"<<i>>"}: ";
+cin>>a[i];
+}
+
+
+cout<<"\n elements of an array A has follows \n";
+
+for(int i=0; i<n; i++){
+
+cout<<"a[i] <<"\n";
+
+}
+cout<<endl;
+System ("PAUSE");
+return =0;
+}
+
+
+Examples on two dimensional array declaration
+
+Example 1: Declaring and Initializing a 2D array
+
+int matrix[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+
+Examples on initialization of two dimensional array in c++
+
+
+Example 1: Initializing a 2D array with default values
+
+int arr[3][3] = {0};
+
+
+Example 2: Initializing a 2D array with specific values
+
+int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};
+
+
+Example 3: Initializing a jagged 2D array with dynamic memory allocation
+
+int** jaggedArr = new int*[3];
+jaggedArr[0] = new int[2] {1, 2};
+jaggedArr[1] = new int[4] {3, 4, 5, 6};
+jaggedArr[2] = new int[3] {7, 8, 9};
+
+
+
+Write a c++ program to print the elements of two dimensional array.
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+
+    // Nested for loop to iterate through each element of the array
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << arr[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
+// Output:
+// 1 2 3
+// 4 5 6
+// 7 8 9
+
+
+Exercise on string
+
+Examples on declaration string in c++
+
+
+char str[5];
+
+
+
+char str[6];
+
+
+
+
+char str[1];
+
+
+
+char str[9];
+
+
+Write some examples of string constants in c++
+
+
+Here are some examples of string constants in C++:
+
+1. Declaring a constant string using the const keyword:
+```
+const string myString = "Hello World";
+```
+
+2. Using a string literal as a constant:
+```
+const char* myString = "Hello World";
+```
+
+3. Declaring a constant string using the #define preprocessor directive:
+```
+#define MY_STRING "Hello World"
+const string myString = MY_STRING;
+```
+
+4. Using a string constant as a function parameter:
+```
+void myFunction(const string& myString) {
+    // Function code here
+}
+
+
+
+
+Write a programs that reads a string entered by user.
+
+
+
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string userInput;
+    cout << "Please enter a string: ";
+    getline(cin, userInput);
+    cout << "You entered: " << userInput << endl;
+    return 0
+
+
+Example
+
+#include <iostream>
+using namespace std;
+int main<> {
+
+char str[80];
+
+cout<<"enter a string":;
+cin>>str;
+
+cout<<" Here is your string ":;
+
+cout<<str;
+
+return =0;
+
+
+Some c++ library functions for strings
+
+
+
+Strcpy()
+
+Strcat()
+
+Strlen()
+
+Strcmp()
+
+
+Examples of strcpy 
+
+
+#include <iostream>
+using namespace std;
+int main <> {
+ 
+Char a[10];
+
+
+strcpy (a,"hello");
+
+cout<<a;
+return (0);
+
+
+#include <iostream>
+using namespace std;
+int main <> {
+
+Char me [30] ="David";
+
+cout<<me<<endl;
+
+
+Strcpy(me," you are not me ");
+
+ cout<<me<<endl;
+
+ System("pause");
+return 0;
+
+
+#include <include.h>
+
+
+#include <cstring.h>
+
+int main<> {
+char str[80];
+
+
+Cout<<"enter a string:";
+
+gets (str);
+
+
+
+Cout<<"length is :"<<Strlen(str);
+
+return 0;
+
+
+
+
+#include <include.h>
+
+#include <cstring.h>
+
+int main<> {
+
+char s1[21], s2[11];
+
+strcpy (s1,  "there");
+
+strcpy (s2,  "Hello");
+
+strcat (s1, s2 );
+
+cout<< s1 <<endl;
+
+cout<< s2 <<endl;
+
+return 0;
+
+#include <include.h>
+
+#include <cstring.h>
+
+int main<> {
+
+Char str1 [30];
+
+strcpy(str1 , "abc");
+
+cout<<str1<<endl;
+strcat(str1,"def");
+
+cout<<str1<<endl;
+char str 2[] ="xyz";
+strcat(str 1,str 2);
+
+cout<<str1<<endl;
+
+str1 [4]='\0';
+
+
+cout<<str1<<endl;
+
+return 0;
+
+COMPARISON OF STRING
+
+str 1  ==  str 2:    0
+
+str 1  >  str 2:  positive number 
+
+str 1  <  str 2:  negative number
+
+
+#include <include.h>
+
+#include <cstring.h>
+
+int main<> {
+
+cout<< strcmp ("abc", "def")<<endl;
+
+cout<< strcmp ("def", "abc")<<endl;
+
+cout<< strcmp ("abc", "abc")<<endl;
+
+cout<< strcmp ("abc", "abcdef")<<endl;
+
+cout<< strcmp ("abc", "ABC")<<endl;
+
+system ("pause");
+
+return 0;
+
+
+#include <include.h>
+
+#include <cstring.h>
+
+int main<> {
+
+Char str [80];
+Cout<<"enter password :";
+gets (str);
+If (strcmp (str, "password "))
+cout<< "invalid password .\n";
+else
+  cout<< "Logged .\n";
+return 0;
+
